@@ -33,21 +33,30 @@
 
   <div class="content">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: June 2, 2026</p>
+    <p class="updated">Last updated: June 29, 2026</p>
 
     <h2>Overview</h2>
-    <p>Second Rise ("we", "our", or "us") is a fitness and wellness app designed to provide personalized workout recommendations for women 40+. This Privacy Policy explains what data we collect, how we use it, and your rights.</p>
+    <p>Second Rise ("we", "our", or "us") is a fitness and wellness app designed to provide personalized workout recommendations for women 40+. This Privacy Policy explains what data we collect, how we use it, and your rights. <strong>Second Rise is not a medical app. It does not provide medical advice, diagnosis, or treatment.</strong></p>
 
     <h2>Data We Collect</h2>
     <p><strong>Account data</strong></p>
     <ul>
       <li>Email address and password (hashed — we never store your plain-text password)</li>
     </ul>
-    <p><strong>Health &amp; fitness data (only if you connect a device)</strong></p>
+    <p><strong>Wellness &amp; fitness data (only if you connect a device)</strong></p>
+    <p>When you connect a consumer fitness wearable or wellness platform, we collect only the following general wellness metrics for the purpose of personalizing workout recommendations:</p>
     <ul>
-      <li>Sleep scores, HRV, resting heart rate, recovery scores, strain, steps, body temperature deviation</li>
-      <li>This data comes from devices you explicitly connect: Oura Ring, WHOOP, Google Fit, Fitbit, or Apple Health</li>
+      <li>Sleep duration and stages (light, deep, REM)</li>
+      <li>Sleep score (where provided by the device)</li>
+      <li>Resting heart rate</li>
+      <li>Heart rate variability (HRV)</li>
+      <li>Blood oxygen saturation (SpO2)</li>
+      <li>Step count</li>
+      <li>Recovery score or readiness score (where provided by the device)</li>
+      <li>Body temperature deviation (Oura only)</li>
     </ul>
+    <p><strong>We do not collect, access, or store blood pressure readings, ECG data, blood glucose measurements, or any other regulated medical measurements</strong> from any connected device or platform. All connected integrations are consumer-grade wellness platforms, not medical devices.</p>
+    <p>Supported integrations: Oura Ring, WHOOP, Fitbit, Apple Health, Google Health, Withings, Garmin, and Android Health Connect. Note: while some of these companies (e.g. Withings) also manufacture FDA-cleared medical devices, Second Rise only accesses their consumer wellness APIs and reads the fitness metrics listed above.</p>
     <p><strong>App usage data</strong></p>
     <ul>
       <li>Daily check-ins (energy level, body map, pain flags)</li>
@@ -58,20 +67,22 @@
 
     <h2>How We Use Your Data</h2>
     <ul>
-      <li>To generate personalized daily workout recommendations</li>
+      <li>To generate personalized daily fitness and workout recommendations</li>
       <li>To track your progress and workout history</li>
       <li>To compare your actual activity against your plan at end of day</li>
-      <li>To personalize recommendations based on your health profile</li>
+      <li>To personalize recommendations based on your wellness profile</li>
     </ul>
+    <p>Wearable data is used solely to adjust fitness recommendations (for example, recommending a rest day when your sleep score is low). It is not used to assess, diagnose, or monitor any medical condition.</p>
     <p>We do <strong>not</strong> sell your data to third parties. We do <strong>not</strong> use your data for advertising.</p>
 
     <h2>Data Storage</h2>
-    <p>Your data is stored securely on Railway (railway.app) infrastructure. Health data from wearables is stored only after you explicitly authorize the connection. All data is transmitted over encrypted HTTPS connections.</p>
+    <p>Your data is stored securely on Railway (railway.app) infrastructure. Wellness data from wearables is stored only after you explicitly authorize the connection. All data is transmitted over encrypted HTTPS connections.</p>
 
     <h2>Third-Party Services</h2>
     <ul>
-      <li><strong>Oura, WHOOP, Google Fit, Fitbit:</strong> Connected only with your explicit authorization via OAuth. We store only the health metrics needed for recommendations.</li>
-      <li><strong>Apple Health:</strong> Imported only when you manually upload an export file.</li>
+      <li><strong>Oura, WHOOP, Fitbit, Google Health, Withings, Garmin:</strong> Connected only with your explicit authorization via OAuth. We store only the wellness metrics listed above.</li>
+      <li><strong>Apple Health:</strong> Imported only when you manually upload an export file from the Apple Health app.</li>
+      <li><strong>Android Health Connect:</strong> Read directly on-device with your explicit permission. Data is sent to our servers only to generate your daily recommendation.</li>
       <li><strong>Anthropic Claude API:</strong> Used to generate workout recommendations. Your profile and check-in data is sent to generate recommendations — no data is retained by Anthropic beyond the request.</li>
       <li><strong>YouTube:</strong> Workout videos are embedded from YouTube. YouTube's own privacy policy applies to video playback.</li>
     </ul>
