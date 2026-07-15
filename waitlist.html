@@ -308,15 +308,15 @@
     <h1>Open. Move. <em>Feel Better.</em></h1>
     <p class="hero-sub">
       Second Rise removes the guesswork from daily movement by recommending
-      your next best move—based on your energy, recovery needs, and the time
-      you have—and guiding you every step of the way.
+      your next best move based on your energy, recovery needs, and the time
+      you have — then guiding you every step of the way.
     </p>
 
     <!-- SIGN UP FORM -->
     <div class="form-card" id="formCard">
       <p class="error-msg" id="errorMsg"></p>
       <label for="nameInput">First name</label>
-      <input type="text" id="nameInput" placeholder="Karen" autocomplete="given-name" />
+      <input type="text" id="nameInput" placeholder="Your first name" autocomplete="given-name" />
       <label for="emailInput">Email address</label>
       <input type="email" id="emailInput" placeholder="you@example.com" autocomplete="email" />
 
@@ -324,24 +324,27 @@
         <label class="main-label">What's your biggest challenge with movement right now?</label>
         <label class="radio-option" onclick="selectOption(this)">
           <input type="radio" name="challenge" value="routine_stopped_working" />
-          <span>My routine stopped working — same effort, different results</span>
-        </label>
-        <label class="radio-option" onclick="selectOption(this)">
-          <input type="radio" name="challenge" value="no_time" />
-          <span>I never have enough time for a proper workout</span>
+          <span>What used to work doesn't anymore.</span>
         </label>
         <label class="radio-option" onclick="selectOption(this)">
           <input type="radio" name="challenge" value="dont_know_whats_right" />
-          <span>I don't know what's right for my body anymore</span>
+          <span>I don't know what my body needs each day.</span>
+        </label>
+        <label class="radio-option" onclick="selectOption(this)">
+          <input type="radio" name="challenge" value="no_time" />
+          <span>I don't have time to figure out the "right" workout.</span>
         </label>
         <label class="radio-option" onclick="selectOption(this)">
           <input type="radio" name="challenge" value="exhausted" />
-          <span>I'm exhausted and struggling to get started</span>
+          <span>I'm too exhausted to know where to start.</span>
         </label>
       </div>
 
+      <p style="font-size:0.85rem; color:#888; margin-bottom:14px; line-height:1.5;">
+        Answer a few questions and receive your first personalized movement recommendation.
+      </p>
       <button class="submit-btn" id="submitBtn" onclick="handleSubmit()">
-        Get My Personalized Movement Plan →
+        Find My Next Best Move →
       </button>
       <p class="form-note">No spam, ever. Unsubscribe anytime.</p>
     </div>
@@ -420,7 +423,7 @@
     <h2>Join women reclaiming<br />their movement</h2>
     <p>Early access is limited. Sign up above to be first in line.</p>
     <a class="cta-btn" href="#" onclick="document.getElementById('emailInput').focus(); return false;">
-      Get Early Access →
+      Find My Next Best Move →
     </a>
   </section>
 
